@@ -3,11 +3,11 @@ var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'game', { preload: preload, 
 
 function preload() {
 
-    game.load.image('background','misc/cloud background2.v4.png');
-    game.load.image('player', 'misc/pajama boy2.png');
-    game.load.image('bullet', 'misc/pillow bullets.png');
-    game.load.spritesheet('boss', 'misc/bossenemy.png', 87, 87, 2);
-    game.load.spritesheet('explosion', 'misc/betterexplosion3.png', 96, 96, 24);
+    game.load.image('background','cloud background2.v4.png');
+    game.load.image('player', 'pajama boy2.png');
+    game.load.image('bullet', 'pillow bullets.png');
+    game.load.spritesheet('boss', 'bossenemy.png', 87, 87, 2);
+    game.load.spritesheet('explosion', 'betterexplosion3.png', 96, 96, 24);
 }
 
 var player;
