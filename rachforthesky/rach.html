@@ -33,13 +33,31 @@
         independent files on top, file that depending on another file at the bottom.
         -->
         <!-- need to include phaser to create game object -->
-		<script type="text/javascript" src="/phaser.js"></script>
-        <script type="text/javascript" src="/base.js"></script>
+		<script type="text/javascript" src="misc/phaser.js"></script>
+        <script type="text/javascript" src="misc/base.js"></script>
         <link rel="stylesheet" type="text/css" href="main.css">
-	</head>
+        <!--
+        include the script file in the order of dependency.
+        independent files on top, file that depending on another file at the bottom.
+        -->
+        <!-- need to include phaser to create game object -->
+		<script type="text/javascript" src="Phaser Game Template/assets/images/phaser.js"></script>
+        <!-- if you need full screen, set margin to 0 -->
+<!--        <link rel="stylesheet" href="main.css">-->
+        <!-- include each states -->
+        <script type="text/javascript" src="Phaser Game Template/assets/GameScreen.js"></script>
+		<script type="text/javascript" src="Phaser Game Template/assets/TitleScreen.js"></script>
+        <script type="text/javascript" src="Phaswer Game Template/assets/EndScreen.js"></script>
+        <!-- 
+        the last script to be loaded should be the script that the game starts on,
+        it create the game object and each game states and start a state
+        -->
+        <script type="text/javascript" src="Phaser Game Template/assets/directory.js"></script>
 
+	</head>
 	<body>
 		<p>Rach For The Sky! (Rachel's version of Reach For The Sky)</p>
+		<div id="gameDiv"></div>
   	</body>
     <div id="game"></div>
     <footer>
